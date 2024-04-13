@@ -25,6 +25,13 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 680px) {
+  nav {
+    padding: 4rem 2rem;
+  }
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -37,6 +44,12 @@ nav ul {
   gap: 4rem;
 }
 
+@media screen and (max-width: 680px) {
+  nav ul {
+    gap: 2rem;
+  }
+}
+
 nav ul li:hover {
   transition: all 0.3s ease-in-out;
   color: #00ff83;
@@ -45,10 +58,18 @@ nav ul li:hover {
 
 .title {
   color: white;
+  text-align: center;
+  width: 100%;
   z-index: 2;
   position: absolute;
   font-size: 3rem;
   left: 50%;
   top: 75%;
   transform: translate(-50%, -75%);
+}
+
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 2rem;
+  }
 }
